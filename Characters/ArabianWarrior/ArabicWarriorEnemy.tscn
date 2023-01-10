@@ -1,0 +1,58 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Walk/1.PNG" type="Texture" id=1]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Attack/07.PNG" type="Texture" id=2]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Attack/09.PNG" type="Texture" id=3]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Attack/06.PNG" type="Texture" id=4]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Attack/08.PNG" type="Texture" id=5]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Attack/10.PNG" type="Texture" id=6]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Walk/2.PNG" type="Texture" id=7]
+[ext_resource path="res://Characters/ArabianWarrior/Sprites/Walk/3.PNG" type="Texture" id=8]
+[ext_resource path="res://Characters/Enemy.gd" type="Script" id=9]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "attack",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 54.0
+height = 48.0
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 21, 63.5 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 18.5, 59.5 )
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource( 9 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.075, 0.075 )
+frames = SubResource( 3 )
+animation = "attack"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 4, 16 )
+shape = SubResource( 4 )
+
+[node name="Sword" type="Area2D" parent="."]
+
+[node name="LeftBlade" type="CollisionShape2D" parent="Sword"]
+position = Vector2( -73, 16.5 )
+shape = SubResource( 5 )
+
+[node name="RightBlade" type="CollisionShape2D" parent="Sword"]
+position = Vector2( 78, 15 )
+shape = SubResource( 6 )

@@ -1,0 +1,43 @@
+[gd_resource type="AnimatedTexture" load_steps=9 format=2]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.147858, 0.742188, 0.338229, 1, 0.0698853, 0.894531, 0.894531, 1 )
+
+[sub_resource type="GradientTexture2D" id=2]
+gradient = SubResource( 1 )
+width = 512
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0.515152, 1 )
+colors = PoolColorArray( 0.126953, 0.8125, 0.153732, 1, 0.174316, 0.875, 0.825733, 1 )
+
+[sub_resource type="GradientTexture2D" id=4]
+gradient = SubResource( 3 )
+width = 512
+
+[sub_resource type="Gradient" id=5]
+offsets = PoolRealArray( 0, 0.450216 )
+colors = PoolColorArray( 0.102539, 0.75, 0.689301, 1, 0.303602, 0.78125, 0.204468, 1 )
+
+[sub_resource type="GradientTexture2D" id=6]
+gradient = SubResource( 5 )
+width = 512
+
+[sub_resource type="Gradient" id=7]
+colors = PoolColorArray( 0.172119, 0.734375, 0.681664, 1, 0.174347, 0.769531, 0.253395, 1 )
+
+[sub_resource type="GradientTexture2D" id=8]
+gradient = SubResource( 7 )
+width = 512
+
+[resource]
+flags = 7
+frames = 4
+fps = 6.0
+frame_0/texture = SubResource( 2 )
+frame_1/texture = SubResource( 4 )
+frame_1/delay_sec = 0.0
+frame_2/texture = SubResource( 6 )
+frame_2/delay_sec = 0.0
+frame_3/texture = SubResource( 8 )
+frame_3/delay_sec = 0.0

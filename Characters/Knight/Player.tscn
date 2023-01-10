@@ -1,0 +1,276 @@
+[gd_scene load_steps=83 format=2]
+
+[ext_resource path="res://Characters/Knight/Player.gd" type="Script" id=1]
+[ext_resource path="res://Characters/Knight/Sprites/Idle/idle_02.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Knight/Sprites/Run/run_03.png" type="Texture" id=3]
+[ext_resource path="res://Characters/Knight/Sprites/Walk/walk_00.png" type="Texture" id=4]
+[ext_resource path="res://Characters/Knight/Sprites/Run/run_05.png" type="Texture" id=5]
+[ext_resource path="res://Characters/Knight/Sprites/Jump/jump_02.png" type="Texture" id=6]
+[ext_resource path="res://Characters/Knight/Sprites/Walk/walk_04.png" type="Texture" id=7]
+[ext_resource path="res://Characters/Knight/Sprites/Run/run_04.png" type="Texture" id=8]
+[ext_resource path="res://Characters/Knight/Sprites/Walk/walk_05.png" type="Texture" id=9]
+[ext_resource path="res://Characters/Knight/Sprites/Walk/walk_01.png" type="Texture" id=10]
+[ext_resource path="res://Characters/Knight/Sprites/Run/run_01.png" type="Texture" id=11]
+[ext_resource path="res://Characters/Knight/Sprites/Walk/walk_03.png" type="Texture" id=12]
+[ext_resource path="res://Characters/Knight/Sprites/Idle/idle_04.png" type="Texture" id=13]
+[ext_resource path="res://Characters/Knight/Sprites/Run/run_02.png" type="Texture" id=14]
+[ext_resource path="res://Characters/Knight/Sprites/Walk/walk_02.png" type="Texture" id=15]
+[ext_resource path="res://Characters/Knight/Sprites/Idle/idle_01.png" type="Texture" id=16]
+[ext_resource path="res://Characters/Knight/Sprites/Run/run_00.png" type="Texture" id=17]
+[ext_resource path="res://Characters/Knight/Sprites/Idle/idle_00.png" type="Texture" id=18]
+[ext_resource path="res://Characters/Knight/Sprites/Idle/idle_03.png" type="Texture" id=19]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_02.png" type="Texture" id=20]
+[ext_resource path="res://Characters/Knight/Sprites/Fall/fall_02.png" type="Texture" id=21]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_06.png" type="Texture" id=22]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_01.png" type="Texture" id=23]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_00.png" type="Texture" id=24]
+[ext_resource path="res://Characters/Knight/Sprites/Fall/fall_00.png" type="Texture" id=25]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_08.png" type="Texture" id=26]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_07.png" type="Texture" id=27]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_09.png" type="Texture" id=28]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_05.png" type="Texture" id=29]
+[ext_resource path="res://Characters/Knight/Sprites/Block/block_04.png" type="Texture" id=30]
+[ext_resource path="res://Characters/Knight/Sprites/Block/block_01.png" type="Texture" id=31]
+[ext_resource path="res://Characters/Knight/Sprites/Block/block_02.png" type="Texture" id=32]
+[ext_resource path="res://Characters/Knight/Sprites/Jump/jump_01.png" type="Texture" id=33]
+[ext_resource path="res://Characters/Knight/Sprites/Block/block_00.png" type="Texture" id=34]
+[ext_resource path="res://Characters/Knight/Sprites/Block/block_03.png" type="Texture" id=35]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_04.png" type="Texture" id=36]
+[ext_resource path="res://Characters/Knight/Sprites/Roll/roll.png" type="Texture" id=37]
+[ext_resource path="res://Characters/Knight/Sprites/Jump/jump_03.png" type="Texture" id=38]
+[ext_resource path="res://Characters/Knight/Sprites/Fall/fall_03.png" type="Texture" id=39]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_10.png" type="Texture" id=40]
+[ext_resource path="res://Characters/Knight/Sprites/Fall/fall_01.png" type="Texture" id=41]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_06.png" type="Texture" id=42]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_04.png" type="Texture" id=43]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_08.png" type="Texture" id=44]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_07.png" type="Texture" id=45]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_02.png" type="Texture" id=46]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_01.png" type="Texture" id=47]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_03.png" type="Texture" id=48]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_00.png" type="Texture" id=49]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_09.png" type="Texture" id=50]
+[ext_resource path="res://Characters/Knight/Sprites/Attack1/attack_1_05.png" type="Texture" id=51]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_11.png" type="Texture" id=52]
+[ext_resource path="res://Characters/Knight/Sprites/Jump/jump_00.png" type="Texture" id=53]
+[ext_resource path="res://Characters/Knight/Sprites/Attack2/attack_2_03.png" type="Texture" id=54]
+[ext_resource path="res://Characters/Knight/Sprites/BlockAndWalk/block_and_walk.png" type="Texture" id=55]
+[ext_resource path="res://Characters/Knight/Sprites/HitFront/hit_front.png" type="Texture" id=56]
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 55 )
+region = Rect2( 0, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 55 )
+region = Rect2( 660, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 55 )
+region = Rect2( 1320, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 55 )
+region = Rect2( 1980, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 55 )
+region = Rect2( 2640, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 55 )
+region = Rect2( 3300, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 56 )
+region = Rect2( 0, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 56 )
+region = Rect2( 660, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 56 )
+region = Rect2( 1320, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 56 )
+region = Rect2( 1980, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 56 )
+region = Rect2( 2640, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 56 )
+region = Rect2( 3300, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 0, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 660, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 1320, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 1980, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 2640, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 3300, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 3960, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 4620, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 5280, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 5940, 0, 660, 720 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 37 )
+region = Rect2( 6600, 0, 660, 720 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 48 ), ExtResource( 36 ), ExtResource( 51 ), ExtResource( 22 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "attack_1",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 47 ), ExtResource( 46 ), ExtResource( 54 ), ExtResource( 43 ), ExtResource( 29 ), ExtResource( 42 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 40 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "attack_2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "block",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "block_and_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 41 ), ExtResource( 21 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "hit_front",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 16 ), ExtResource( 2 ), ExtResource( 19 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 33 ), ExtResource( 6 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "roll",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "run",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 8.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 164.0
+height = 224.0
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 234.5, 342.75 )
+
+[node name="Player" type="KinematicBody2D"]
+scale = Vector2( 0.25, 0.25 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "attack_2"
+frame = 8
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -68, 108 )
+shape = SubResource( 2 )
+
+[node name="RollingTimer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+
+[node name="RollCooldownTimer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="Sword" type="Area2D" parent="."]
+
+[node name="RightBlade" type="CollisionShape2D" parent="Sword"]
+position = Vector2( 368, 77.25 )
+shape = SubResource( 21 )
+
+[node name="LeftBlade" type="CollisionShape2D" parent="Sword"]
+position = Vector2( -548, 72 )
+shape = SubResource( 21 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="RollingTimer" to="." method="_on_RollingTimer_timeout"]
+[connection signal="timeout" from="RollCooldownTimer" to="." method="_on_RollCooldownTimer_timeout"]
+[connection signal="area_entered" from="Sword" to="." method="_on_Sword_area_entered"]
+[connection signal="area_exited" from="Sword" to="." method="_on_Sword_area_exited"]
